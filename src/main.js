@@ -1,4 +1,8 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import ProductList from './components/ProductList.vue'; 
 
-createApp(App).mount('#app')
+const app = createApp(App);
+app.component('ProductList', ProductList); // Componente registrado com o novo nome
+
+app.mount('#app');
